@@ -14,4 +14,62 @@
 npm install express nodemon mongoose dotenv cors jsonwebtoken bcrypt
 ```
 
+## Schema
+
+### User Schema:
+Username,Password,Email required.
+
+### Note Schema
+Title,Description and userId
+
+## Routes
+
+### User Routes
+#### New User SignUp:
+```
+deployedLink/users/signup
+```
+
+### User SignIn:
+```
+deployedLink/users/signin
+```
+
+### Note Routes
+
+### Home route
+```
+deployedlink/note
+```
+### CreateNote (POST)
+
+```
+deployedlink/note
+```
+### GetNote (GET)
+```
+deployedlink/note
+```
+
+### UpdateNote (PUT)
+```
+deployedlink/note:id
+```
+##### id: noteId to update a perticular note
+
+### DeleteNote (DELETE)
+```
+deployedlink/note:id
+```
+##### id: noteId to delete a perticular note
+
+
+### JSONWEBTOKEN is used for user authentication for every single step involved from creation to updation of the note for a perticular user, as it is not feasible to check for the authenticity of the user for every single step.
+
+### MongoDb atlas is used as the database with two collections-
+#### User
+#### Note
+
+### Mumbai's data-center is chosen.
+
 
